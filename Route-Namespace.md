@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `boot` function in the `aRouteServiceProvider` is responsible for defining how routes are loaded and configured in your Laravel application. It allows you to specify routing behavior, including middleware, namespaces, and route files.
+The `boot` function in the `app\Providers\RouteServiceProvider` is responsible for defining how routes are loaded and configured in your Laravel application. It allows you to specify routing behavior, including middleware, namespaces, and route files.
 
 ## Structure of the `boot` Function
 
@@ -10,6 +10,9 @@ The `boot` function in the `aRouteServiceProvider` is responsible for defining h
 
 protected $namespace = 'App\Http\Controllers';
 
+
+
+## Boot function
 
 public function boot()
 {
@@ -27,6 +30,8 @@ public function boot()
     });
 }
 
+
+## Route/web.php
 
 Route::group(['namespace' => 'SupportTeam'], function(){
     Route::get('/test', 'StudentRecordController@create')->name('create');
