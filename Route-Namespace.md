@@ -8,11 +8,16 @@ The `boot` function in the `app\Providers\RouteServiceProvider` is responsible f
 
 ```php
 
+
+## at your 'app\Providers\RouteServiceProvider' Location
+
+## Declare this
+
 protected $namespace = 'App\Http\Controllers';
 
 
 
-## Boot function
+## Make changes to Boot function
 
 public function boot()
 {
