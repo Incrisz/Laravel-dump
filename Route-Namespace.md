@@ -52,7 +52,7 @@ To change the default namespace for your controllers, you can modify the `$names
 Here's an example of how to customize it:
 
 ```php
-protected $namespace = 'App\Http\Controllers\YourCustomNamespace';
+protected $namespace = 'App\Http\Controllers';
 
 
 ### Route Group Configuration within the `boot` Function
@@ -63,5 +63,5 @@ The `boot` function in the `RouteServiceProvider` plays a pivotal role in settin
 $this->routes(function () {
     Route::middleware('web')
         ->namespace('App\Http\Controllers')
-        ->group(base_path('routes/support_team.php'));
+        ->group(base_path('routes/web.php'));
 });
